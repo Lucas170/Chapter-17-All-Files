@@ -83,7 +83,7 @@ int init()
       P = GetP(); // To account for 5 digit brokers. Used to convert pips to decimal place
       YenPairAdjustFactor = GetYenAdjustFactor(); // Adjust for YenPair
       
-      start();
+      start(); // Calling start() here is a precaution to ensure start() runs
    return(0);
   }
 //+------------------------------------------------------------------+
