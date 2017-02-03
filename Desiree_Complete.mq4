@@ -182,7 +182,7 @@ int start()
             entryLock = True; // Prevents future entry signals
            }
    
-         if(entryLock == False) if(EntrySignal(ShortEntryBreakout)==2){ // Open Short Positions
+         else if(entryLock == False) if(EntrySignal(ShortEntryBreakout)==2){ // Open Short Positions
             OpenPositionMarket(OP_SELL, GetLot(IsSizingOn, Lots, Risk, YenPairAdjustFactor, Stop, P), Stop, Take, MagicNumber, Slippage, OnJournaling, P, IsECNbroker, MaxRetriesPerTick);
             OpenPositionPending(OP_SELLSTOP, Bid - 0.5*turtleATR, 0, GetLot(IsSizingOn, Lots, Risk, YenPairAdjustFactor, Stop, P), 0, 0, MagicNumber, Slippage, OnJournaling, P, IsECNbroker, MaxRetriesPerTick);
             OpenPositionPending(OP_SELLSTOP, Bid - 1.0*turtleATR, 0, GetLot(IsSizingOn, Lots, Risk, YenPairAdjustFactor, Stop, P), 0, 0, MagicNumber, Slippage, OnJournaling, P, IsECNbroker, MaxRetriesPerTick);
