@@ -6,29 +6,6 @@
 #property copyright "Copyright 2015, Black Algo Technologies Pte Ltd"
 #property link      "lucas@blackalgotechnologies.com"
 
-   /* 
-   -----
-   
-   Hey guys,
-   
-   I strongly encourage you stay in touch with our course updates 
-   & new course launches (on Machine Learning, Data Science etc) by joining 
-   our mailing list (if you haven't already done so).
-   This allows me to have a channel to keep in touch with you. 
-   No spam, and you can unsubscribe anytime. =)
-   
-   Link: http://eepurl.com/bVQiXr
-   
-   After you sign up, we will send you our Ebook - "Black Algo Strategy Development Guide".
-   We are looking to create more ebooks/guides for you guys. Will send them to you via email once they
-   are out!
-   
-   Cheers,
-   Lucas
-   
-   -----
-   */
-   
 /* ----------- READ ME ----------------
 
 Warning: If you have not attempted to code Desiree on your own. Stop reading the code and attempt it. 
@@ -57,7 +34,7 @@ extern string  Header3 = "----------TP & SL Settings-----------";
 
 extern double  FixedStopLoss = 0; // Hard Stop in Pips. Will be overridden if vol-based SL is true 
 extern bool    IsVolatilityStopOn = True;
-extern double     VolBasedSLMultipler = 2; // Stop Loss Amount in units of Volatility
+extern double  VolBasedSLMultipler = 2; // Stop Loss Amount in units of Volatility
 
 extern double  FixedTakeProfit = 0; // Hard Take Profit in Pips. Will be overridden if vol-based TP is true 
 extern bool    IsVolatilityTakeProfitOn = False; 
@@ -134,11 +111,11 @@ int start()
       
       // TDL 2: Assign values to variables. Declare Cross functions
       
-      DonchianTopEntry1 = iCustom(NULL, 0, "Turtle Donchian Channels_Complete", DonchianPeriodsEntry, MaxBars, 1, 1);
-      DonchianBottomEntry1 = iCustom(NULL, 0, "Turtle Donchian Channels_Complete", DonchianPeriodsEntry, MaxBars, 0, 1);
+      DonchianTopEntry1 = iCustom(NULL, 0, "MQL4 Course/Turtle Donchian Channels_Complete", DonchianPeriodsEntry, MaxBars, 1, 1);
+      DonchianBottomEntry1 = iCustom(NULL, 0, "MQL4 Course/Turtle Donchian Channels_Complete", DonchianPeriodsEntry, MaxBars, 0, 1);
       
-      DonchianTopExit1 = iCustom(NULL, 0, "Turtle Donchian Channels_Complete", DonchianPeriodsExit, MaxBars, 1, 1);
-      DonchianBottomExit1 = iCustom(NULL, 0, "Turtle Donchian Channels_Complete", DonchianPeriodsExit, MaxBars, 0, 1);
+      DonchianTopExit1 = iCustom(NULL, 0, "MQL4 Course/Turtle Donchian Channels_Complete", DonchianPeriodsExit, MaxBars, 1, 1);
+      DonchianBottomExit1 = iCustom(NULL, 0, "MQL4 Course/Turtle Donchian Channels_Complete", DonchianPeriodsExit, MaxBars, 0, 1);
       
       Close1 = iClose(NULL, 0, 1);
       
