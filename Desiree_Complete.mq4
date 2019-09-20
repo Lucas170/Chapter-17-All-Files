@@ -1,11 +1,12 @@
 //+------------------------------------------------------------------+
 //|                                                    Robot Desiree
-//|                                        Copyright 2015,Lucas Liew 
+//|                                        Copyright 2019,Lucas Liew 
 //|                                  lucas@blackalgotechnologies.com 
 //+------------------------------------------------------------------+
 #property copyright "Copyright 2015, Black Algo Technologies Pte Ltd"
 #property link      "lucas@blackalgotechnologies.com"
 
+   
 /* ----------- READ ME ----------------
 
 Warning: If you have not attempted to code Desiree on your own. Stop reading the code and attempt it. 
@@ -111,11 +112,11 @@ int start()
       
       // TDL 2: Assign values to variables. Declare Cross functions
       
-      DonchianTopEntry1 = iCustom(NULL, 0, "MQL4 Course/Turtle Donchian Channels_Complete", DonchianPeriodsEntry, MaxBars, 1, 1);
-      DonchianBottomEntry1 = iCustom(NULL, 0, "MQL4 Course/Turtle Donchian Channels_Complete", DonchianPeriodsEntry, MaxBars, 0, 1);
+      DonchianTopEntry1 = iCustom(NULL, 0, "Turtle Donchian Channels_Complete", DonchianPeriodsEntry, MaxBars, 1, 1);
+      DonchianBottomEntry1 = iCustom(NULL, 0, "Turtle Donchian Channels_Complete", DonchianPeriodsEntry, MaxBars, 0, 1);
       
-      DonchianTopExit1 = iCustom(NULL, 0, "MQL4 Course/Turtle Donchian Channels_Complete", DonchianPeriodsExit, MaxBars, 1, 1);
-      DonchianBottomExit1 = iCustom(NULL, 0, "MQL4 Course/Turtle Donchian Channels_Complete", DonchianPeriodsExit, MaxBars, 0, 1);
+      DonchianTopExit1 = iCustom(NULL, 0, "Turtle Donchian Channels_Complete", DonchianPeriodsExit, MaxBars, 1, 1);
+      DonchianBottomExit1 = iCustom(NULL, 0, "Turtle Donchian Channels_Complete", DonchianPeriodsExit, MaxBars, 0, 1);
       
       Close1 = iClose(NULL, 0, 1);
       
